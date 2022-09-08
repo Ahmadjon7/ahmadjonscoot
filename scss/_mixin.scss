@@ -1,0 +1,15 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+}
+@mixin text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+}

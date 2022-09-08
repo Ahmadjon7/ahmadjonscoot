@@ -1,0 +1,111 @@
+// choose style 
+
+.choose{
+    &__list{
+        width: 100%;
+        flex-direction: column;
+        @include flex;
+        padding-bottom: 329px;
+    }
+    &__item{
+        width: 100%;
+        @include flex;
+        &:nth-child(2){
+            flex-direction: row-reverse;
+        }
+        padding-top: 60px;
+
+    }
+    &__box{
+        width: 43%;
+        max-width: 100%;
+    }
+    &__img{
+        border-radius: 50%;
+   }
+   &__title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #495567;
+   }
+   &__text{
+        // max-width: 100%;
+        padding-top: 24px;
+        padding-bottom: 40px;
+        @include text;
+        line-height: 25px;
+        color: #939CAA;
+   }
+}
+@media screen and (max-width:800px) {
+    .choose{
+        &__list{
+            padding-top: 120px;
+        }
+        &__item{
+            flex-direction: column-reverse;
+        }
+        &__item:nth-child(2){
+            flex-direction: column-reverse;
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+        &__title{
+            text-align: center;
+            width: 457px;
+            padding-top: 56px;
+        }
+        &__text{
+            text-align: center;
+            padding: 40px 0;
+            width: 575px;
+        }
+        &__box{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        &__img{
+            width: 450px;
+        }
+    }
+}
+@media screen and (max-width:425px) {
+    .choose{
+        &__list{
+            padding-top: 120px;
+        }
+        &__item{
+            flex-direction: column-reverse;
+        }
+        &__item:nth-child(2){
+            flex-direction: column-reverse;
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+        &__title{
+            text-align: center;
+            width: 311px;
+            padding-top: 56px;
+            font-size: 32px;
+        }
+        &__text{
+            text-align: center;
+            padding: 32px 0;
+            font-size: 20px;
+            width: 311px;
+        }
+        &__box{
+            width: 311px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        &__img{
+            width: 311px;
+       }
+    }
+}

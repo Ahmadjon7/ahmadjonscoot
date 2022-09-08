@@ -1,0 +1,119 @@
+// today style 
+.today{
+    background: #495567;
+    &__list{
+        width: 100%;
+        max-width: 100%;
+        @include flex;
+        padding: 102px 0;
+    }
+    &__item-1{
+        width: 38.5%;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #FFFFFF;
+    }
+    &__item-2{
+        width: 33%;
+        @include flex;
+    }
+    &__app{
+        width: 159px;
+        max-width: 100%;
+        background: #E5ECF4;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 8px 0;
+    }
+    &__play{
+        width: 182px;
+        max-width: 100%;
+        background: #E5ECF4;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 8px 0;
+    }
+    &__text--1{
+        width: 92px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__text--2{
+        display: flex;
+        flex-direction: column;
+        width: 115px;
+    }
+    &__span{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.892857px;
+        color: #495567;
+    }
+    &__subtext{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: -0.446429px;
+        color: #495567;
+    }
+    &__i{
+        font-size: 24px;
+        color: #495567;
+    }
+@media screen and (max-width:800px) {
+    .today{
+        &__list{
+           flex-direction: column;
+        }
+        &__item-1{
+            width: 457px;
+            text-align: center;
+        }
+        &__item-2{
+            width: 256px;
+            margin-top: 40px;
+        }
+        &__app{
+            width: 113px;
+        }
+        &__play{
+            width: 130px;
+        }
+        &__subtext{
+            font-size:8px ;
+            display: inline-block;
+        }
+        &__span{
+            font-size: 16px;
+            display: inline-block;
+        }
+        &__i{
+            font-size: 18px;
+        }
+        &__text--1{
+            width: 64px;
+        }
+        &__text--2{
+            width: 80px;
+        }
+    }
+}
+@media screen and (max-width:425px) {
+    .today{
+        &__item-1{
+            width: 311px;
+            font-size: 32px;
+        }
+    }
+}
+}

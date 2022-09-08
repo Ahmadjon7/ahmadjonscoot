@@ -1,0 +1,47 @@
+// footer style 
+.footer{
+    width: 100%;
+    max-width: 100%;
+    background: #333A44;
+    padding: 36px 0;
+    &__box{
+        width: 100%;
+        @include flex;
+    }
+    &__line{
+        width: 120px;
+        @include flex;
+    }
+    &__line a i{
+        font-size: 24px;
+        color: #FCB72B;
+        &:hover{
+            color: #E5ECF4;
+        }
+    }
+    @media screen and (max-width:425px) {
+        .footer{
+             &__box{
+                flex-direction: column;
+             }
+            &__list{
+                flex-direction: column;
+             }
+             &__sublist{
+                flex-direction: column;
+             }
+             &__item-1{
+                padding-top: 64px;
+             }
+             &__item-2{
+                padding: 41px 0 87px 0;
+             }
+             &__subitem{
+                padding-top: 16px;
+             }
+             &__line{
+                padding-bottom: 88px;
+             }
+        }
+    }
+}
